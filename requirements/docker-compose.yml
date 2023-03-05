@@ -5,4 +5,8 @@ services:
    container_name: twitch_bot
    volumes:
      - ./src:/tmp
+   environment:
+     - APP_ID
+     - APP_SECRET
+     - TWITCH_USER
    entrypoint: tail -f
