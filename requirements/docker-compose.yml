@@ -3,5 +3,6 @@ services:
   twitch_bot:
    build: .
    container_name: twitch_bot
-   image: python:alpine3.17
+   volumes:
+     - ./src:/tmp
    entrypoint: tail -f
