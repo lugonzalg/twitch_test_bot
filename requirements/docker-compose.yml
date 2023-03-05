@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  twitch_bot:
+   build: .
+   container_name: twitch_bot
+   image: python:alpine3.17
+   entrypoint: tail -f
